@@ -24,7 +24,7 @@ let pokemonList = [
 ];
 for (i = 0; i < pokemonList.length; i++) {
     console.log(pokemonList[i]);
-    document.write(pokemonList[i].name + " ( height: " + pokemonList[i].height + " m ) ");
+    document.write("<p>" + pokemonList[i].name + " ( height: " + pokemonList[i].height + " m ) ");
 //this just gives displays all pokemon and height included 
     if(i >= 1.0) {
         console.log(" - aww cute\!");
