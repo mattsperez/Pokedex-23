@@ -36,7 +36,7 @@ let pokemonList = [
     };
 })();
 
-pokemonList.forEach(function(pokemon) {
+pokemonRepository.getAll().forEach(function(pokemon){
     console.log(pokemon.name + " ( height: " + pokemon.height + " m ) ");
    document.write(pokemon.name + " ( height: " + pokemon.height + " m ) </br> ");
 });
