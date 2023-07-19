@@ -36,6 +36,8 @@ let pokemonList = [
     };
 })();
 
+pokemonRepository.add({name: "Dratini", height: "1.8", type: ["dragon"]});
+
 pokemonRepository.getAll().forEach(function(pokemon){
     console.log(pokemon.name + " ( height: " + pokemon.height + " m ) ");
    document.write(pokemon.name + " ( height: " + pokemon.height + " m ) </br> ");
