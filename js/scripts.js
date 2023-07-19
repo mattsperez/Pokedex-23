@@ -1,3 +1,4 @@
+let pokemonRepository = (function () {
 let pokemonList = [
     
     {
@@ -22,6 +23,19 @@ let pokemonList = [
     }
 
 ];
+    function add (pokemon){
+        pokemonList.push(pokemon);
+    };
+
+    function getAll() {
+        return pokemonList;
+    };
+    return {
+        add: add,
+        getAll: getAll
+    };
+})();
+
 pokemonList.forEach(function(pokemon) {
     console.log(pokemon.name + " ( height: " + pokemon.height + " m ) ");
    document.write(pokemon.name + " ( height: " + pokemon.height + " m ) </br> ");
