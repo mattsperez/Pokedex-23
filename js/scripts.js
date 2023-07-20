@@ -41,6 +41,7 @@ let pokemonList = [
 })();
 
 pokemonRepository.add({name: "Dratini", height: "1.8", type: ["dragon"]});
+pokemonRepository.add("apples", "bananas", "oranges");
 
 pokemonRepository.getAll().forEach(function(pokemon){
     console.log(pokemon.name + " ( height: " + pokemon.height + " m ) ");
