@@ -1,15 +1,62 @@
+h1{
+  text-align: center;
+}
+
 .button-class {
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    padding: auto;
     font-size: 18px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    margin: 5px auto;
     cursor: pointer;
     background-color: #7497AB;
     color: #EDDDBD;
     border: 3px solid #424363;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+   ul {
+    list-style-type: none;
+   }
+
+  #modal-container {
+    display: none;
+  }
+  
+  #modal-container.is-visible {
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+    overflow: auto; 
+    display: grid;
+    text-align: center;
+  }
+
+  .modal {
+    margin: auto;
+    display: inline;
+    box-sizing: border-box;
+    background: #7497AB;
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #EDDDBD;
+    border: 3px solid #424363;
     border-radius: 40px;
+
+  }
+  
+  .modal-close {
+    float: right;
+    border: 0;
+    background: none;
+    color: #EDDDBD;
+    text-decoration: underline;
   }
