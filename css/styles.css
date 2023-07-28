@@ -1,4 +1,4 @@
-h1{
+h1, h2{
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(66, 67, 99, 0.7);
     z-index: 999; 
     overflow: auto; 
     display: grid;
@@ -60,3 +60,4 @@ h1{
     color: #EDDDBD;
     text-decoration: underline;
   }
+  
