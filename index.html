@@ -2,20 +2,41 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+
+		<!-- favicon of a pokeball -->
+		<link
+			href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAC4uLgAz8/PAAAAAAD///8A29vbAAAA/wCmpqYA6+vrAAAAhwAAAOMAkZGRAAAA1AAAAL0AAACmAAAAAAAAAAAAIiIiIiIiIiIiIiN0EGIiIiIjMzdBBqIiIjMzM3QQaiIiMzMzN0EGIiMzMyIidBBiIzMyIiInQQIiIiIiIiIiIiIiIiIiIiIiJVVSIiIlm9IlVVUiIlm8giJVVVVVm80iIlVVVVm82CIiJVVVm82CIiIiJVm80iIiIiIiIiIiIiL4HwAA4AcAAMADAACAAQAAgAEAAAAAAAADwAAAAkAAAAJAAAADwAAAAAAAAIABAACAAQAAwAMAAOAHAAD4HwAA"
+			rel="icon"
+			type="image/x-icon"
+		/>
+
+		<!-- font for the app "Righteous" -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+			rel="stylesheet"
+		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Pokedex</title>
 		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 	</head>
+
 	<body>
-		<h1>Pokedex</h1>
-		<h2>Gotta Catch 'em All</h2>
-
-		<ul class="pokemon-list"></ul>	
-
+			<header class="page-header">
+				<img
+					class="header-logo"
+					src="../images/pokelogo.png"
+					alt="Pokemon Gotta Catch Em All"
+				/>
+			</header>
+		<ul class="pokemon-list"></ul>
+		
 		<div id="modal-container"></div>
-
+		
 		<script src="js/promise-polyfill.js"></script>
 		<script src="js/fetch-polyfill.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
+
 </html>
