@@ -1,63 +1,119 @@
-h1, h2{
-  text-align: center;
+/* color palette
+#FFCB08 - pokemon yellow
+#CBC5B3 - grey
+#3563ad - medium blue
+#1e386e - dark blue
+#021A59 - shadow blue
+#70B8F0 - light blue
+*/
+
+body {
+  font-family: "Righteous";
+  font-style: normal;
+  background: url(../images/pokemap.jpg);
+  background-color: #4880C0;
+}
+
+.header-logo {
+  height: 130px;
+  padding-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
 }
 
 .button-class {
-    padding: auto;
-    font-size: 18px;
-    margin: 5px auto;
-    cursor: pointer;
-    background-color: #7497AB;
-    color: #EDDDBD;
-    border: 3px solid #424363;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-  
-  }
-   ul {
-    list-style-type: none;
-   }
+  font-family: "Righteous";
+	font-size: 20px;
+	margin-left: auto;
+  margin-right: auto;
+	cursor: pointer;
+	background-color: #3563ad;
+	color: #FFCB08;
+	border: 3px solid #1e386e;
+	border-radius: 20px;
+  width: 150px;
+}
 
-  #modal-container {
-    display: none;
-  }
-  
-  #modal-container.is-visible {
-    position: fixed;
-    padding: 20px;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(66, 67, 99, 0.7);
-    z-index: 999; 
-    overflow: auto; 
-    display: grid;
-    text-align: center;
-  }
+.button-class {
+  transition-duration: 0.4s;
+}
 
-  .modal {
-    margin: auto;
-    display: inline;
-    box-sizing: border-box;
-    background: #7497AB;
-    padding: 15px;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    color: #EDDDBD;
-    border: 3px solid #424363;
-    border-radius: 40px;
+.button-class:hover {
+  background-color: #1e386e;
+  color: #FFCB08;
+  border: 3px solid #3563ad;
+	border-radius: 20px;
+  box-shadow: 0 0 4px 2px rgba(2, 26, 89, 0.80);
+}
 
-  }
+ul {
+  list-style: none;
+	display: grid;
+  grid-template-columns: repeat(6, .5fr);
+  gap: 10px;
+  grid-auto-rows: 30px, auto;
+}
+
+#modal-container {
+	display: none;
+}
+
+#modal-container.is-visible {
+	position: fixed;
+	padding: 20px;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(53, 99, 173, 0.7);
+	z-index: 999;
+	overflow: auto;
+	display: grid;
+	text-align: center;
+}
+
+.modal {
+	margin: auto;
+	display: inline;
+	box-sizing: border-box;
+  background:#1e386e;
+	padding: 15px;
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+	color: #FFCB08;
+	border: 8px solid #3563ad;
+	border-radius: 40px;
+  box-shadow: 0 0 10px 2px rgba(255, 203, 8, 0.80);
   
-  .modal-close {
-    float: right;
-    border: 0;
-    background: none;
-    color: #EDDDBD;
-    text-decoration: underline;
-  }
   
+}
+
+.modal-close {
+	float: right;
+	border: 0;
+	background: none;
+	color: #FFCB08;
+	text-decoration: underline;
+}
+
+
+/*#search-bar {
+  font-family: "Righteous";
+  font-size: 16px;
+	background: #3563ad;
+	padding-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+	width: 200px;
+  height: 40px;
+	text-align: center;
+	color: #FFCB08;
+	border: 4px solid #1e386e;
+	border-radius: 40px;
+  box-shadow: 0 0 10px 2px rgba(255, 203, 8, 0.80);
+}*/
