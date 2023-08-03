@@ -48,10 +48,6 @@ body {
 }
 
 /* #modal-container {
-	display: none;
-} */
-
-/* #modal-container {
 	position: fixed;
 	padding: 20px;
 	box-sizing: border-box;
@@ -93,10 +89,3 @@ body {
 	display: grid;
 	text-align: center;
 }
-/* ul {
-  list-style: none;
-	display: grid;
-  grid-template-columns: repeat(6, .5fr);
-  gap: 10px;
-  grid-auto-rows: 30px, auto;
-} */
