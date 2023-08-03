@@ -34,7 +34,7 @@
 
 	<body>
 		<!--div for pokemon to list as buttons-->
-		<div class="">
+		<div class="container">
 			<nav
 				class="navbar navbar fixed-top navbar-expand-lg navbar-dark"
 				style="background-color: #3563ad"
@@ -45,57 +45,33 @@
 					src="../images/pokelogo.png"
 					alt="Pokemon Gotta Catch Em All"
 				/>
-				<!--search bar-->
-				<form class="form-inline">
-					<input
-						class="form-control mr-sm-2"
-						type="search"
-						placeholder="Search Pokedex..."
-						aria-label="Search"
-					/>
-					<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">
-						Search
-					</button>
-				</form>
 			</nav>
 		</div>
-		<div class="list-group">
-			<button
-			type="button"
-			class="btn btn-block"
-			data-toggle="modal"
-			data-target="#exampleModal"
-		>
-		</button>
+		<!--buttons where pokemon names are displayed-->
+		<div class="container">
+			<div class=".col-sm justify-content-center list-group">
+				<button
+					type="button"
+					class="btn btn-block"
+					data-toggle="modal"
+					data-target="#exampleModal"
+				></button>
+			</div>
 		</div>
-	
+
 		<!--modal for when a pokemon is clicked on-->
-		<div
-			class="modal fade"
-			id="exampleModal"
-			tabindex="-1"
-			role="dialog"
-			aria-labelledby="exampleModalLabel"
-			aria-hidden="true"
-		>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel"></h5>
-					<!-- 	<button
-							type="button"
-							class="close"
-							data-dismiss="modal"
-						>
-							<span aria-hidden="true">&times;</span>
-						</button> -->
+						<h3 class="modal-title text-center w-100"></h3>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body text-center">
 						<div class="modal-height"></div>
 						<div class="modal-types"></div>
-						<img class="modal-image">
+						<img class="modal-image" />
 					</div>
-					
+
 					<div class="modal-footer">
 						<button
 							type="button"
@@ -104,7 +80,6 @@
 						>
 							Close
 						</button>
-		
 					</div>
 				</div>
 			</div>
