@@ -35,11 +35,11 @@ body {
   width: 150px;
 }
 
-.btn-block, .btn-secondary {
+.btn, .btn-secondary {
   transition-duration: 0.3s;
 }
 
-.btn-block, .btn-secondary:hover {
+.btn:hover, .btn-secondary:hover {
   background-color: #1e386e;
   color: #FFCB08;
   border: 3px solid #3563ad;
@@ -66,30 +66,6 @@ body {
 	text-align: center;
 } */
 
-/* .modal-fade{
-	margin: auto;
-	display: grid;
-	box-sizing: border-box;
-  background:#1e386e;
-	padding: 15px;
-	width: 100%;
-	max-width: 350px;
-  max-height: 350px;
-	text-align: center;
-	color: #FFCB08;
-	border: 8px solid #3563ad;
-	border-radius: 40px;
-  box-shadow: 0 0 10px 2px rgba(255, 203, 8, 0.80);
-} */
-
-/* .modal-close {
-	float: right;
-	border: 0;
-	background: none;
-	color: #FFCB08;
-	text-decoration: underline;
-} */
-
 .list-group {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -106,7 +82,17 @@ body {
   width: 150px;
 }
 
-
+.modal-dialog {
+	padding: 20px;
+	box-sizing: border-box;
+	width: 500px;
+	height: 400px;
+	background: rgba(53, 99, 173, 0.7);
+	z-index: 999;
+	overflow: auto;
+	display: grid;
+	text-align: center;
+}
 /* ul {
   list-style: none;
 	display: grid;
