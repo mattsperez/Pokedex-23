@@ -5,9 +5,6 @@ let pokemonRepository = (function () {
 	//API to retrieve Pokedex info
 	let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=151";
 
-	//modal
-	/* let modalContainer = document.querySelector("#exampleModal"); */
-
 	//function to add pokemon and to reject if a non pokemon is added
 	function add(pokemon) {
 		if (
@@ -44,7 +41,7 @@ let pokemonRepository = (function () {
 		});
 	}
 
-	//trying to change item to pokemon
+	//retrieves info from api
 	function loadList() {
 		return fetch(apiUrl)
 			.then(function (response) {
@@ -65,7 +62,7 @@ let pokemonRepository = (function () {
 			});
 	}
 
-	//shows info inside modal
+	//shows details inside modal
 	function loadDetails(pokemon) {
 		let url = pokemon.detailsUrl;
 		return fetch(url)
@@ -85,20 +82,21 @@ let pokemonRepository = (function () {
 			});
 	}
 
+	//shows all the details in the bootstrap modal
 	function showDetails(pokemon) {
 		loadDetails(pokemon).then(function () {
-
 			let titleElement = document.querySelector(".modal-title");
 			titleElement.innerText = pokemon.name;
 
 			let heightElement = document.querySelector(".modal-height");
-			heightElement.innerText = "Height: " + " " + pokemon.height + " ";
+			heightElement.innerText =
+				"Height: " + " " + (pokemon.height * 0.328084).toFixed(2) + " " + "ft";
 
 			let typesElement = document.querySelector(".modal-types");
 			typesElement.innerText = "Types: " + " " + pokemon.types.join(", ");
 
 			let imageElement = document.querySelector(".modal-image");
-			imageElement.setAttribute("src", pokemon.imageUrl)
+			imageElement.setAttribute("src", pokemon.imageUrl);
 		});
 	}
 
