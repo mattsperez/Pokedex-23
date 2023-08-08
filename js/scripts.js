@@ -3,7 +3,7 @@ let pokemonRepository = (function () {
 	let pokemonList = [];
 
 	//API to retrieve Pokedex info
-	let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=151";
+	let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=151\\";
 
 	//function to add pokemon and to reject if a non pokemon is added
 	function add(pokemon) {
@@ -110,8 +110,11 @@ let pokemonRepository = (function () {
 	};
 })();
 
+
 pokemonRepository.loadList().then(function () {
 	pokemonRepository.getAll().forEach(function (pokemon) {
 		pokemonRepository.addListItem(pokemon);
 	});
 });
+
+
