@@ -33,53 +33,44 @@
 	</head>
 
 	<body>
-		<!--div for pokemon to list as buttons-->
-		<div class="container">
-			<nav
-				class="navbar navbar fixed-top navbar-expand-lg navbar-dark"
-				style="background-color: #3563ad"
-			>
-				<!--Logo for navbar-->
-				<img
-					class="navbar-logo img-fluid"
-					src="../Pokedex-23/images/pokelogo.png"
-					alt="Pokemon Gotta Catch Em All"
-				/>
-			</nav>
-		</div>
+		<nav
+			class="navbar sticky-top navbar-expand-lg navbar-dark"
+			style="background-color: #3563ad"
+		>
+			<!--Logo for navbar-->
+			<img
+				class="navbar-logo img-fluid max-width-100"
+				src="../images/pokelogo.png"
+				alt="Pokemon Gotta Catch Em All"
+			/>
+		</nav>
+
 		<!--buttons where pokemon names are displayed-->
 		<div class="container">
 			<div class=".col-sm justify-content-center list-group">
-				<button
-					type="button"
-					class="btn btn-block"
-					data-toggle="modal"
-					data-target="#exampleModal"
-				></button>
-			</div>
-		</div>
+				<!--modal for when a pokemon is clicked on-->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h3 class="modal-title text-center w-100"></h3>
+							</div>
+							<div class="modal-body text-center">
+								<div class="modal-height"></div>
+								<div class="modal-types"></div>
+								<img class="modal-image" />
+							</div>
 
-		<!--modal for when a pokemon is clicked on-->
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h3 class="modal-title text-center w-100"></h3>
-					</div>
-					<div class="modal-body text-center">
-						<div class="modal-height"></div>
-						<div class="modal-types"></div>
-						<img class="modal-image" />
-					</div>
-
-					<div class="modal-footer">
-						<button
-							type="button"
-							class="btn btn-secondary"
-							data-dismiss="modal"
-						>
-							Close
-						</button>
+							<div class="modal-footer">
+								<button
+									type="button"
+									class="btn btn-secondary"
+									data-dismiss="modal"
+								>
+									Close
+								</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
