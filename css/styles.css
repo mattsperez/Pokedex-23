@@ -8,7 +8,7 @@
 */
 
 body {
-	font-family: "Righteous";
+	font-family: 'Righteous';
 	font-style: normal;
 	background: url(../images/pokemap.jpg);
 	background-color: #4880c0;
@@ -24,7 +24,7 @@ body {
 
 .btn,
 .btn-secondary {
-	font-family: "Righteous";
+	font-family: 'Righteous';
 	font-size: 20px;
 	margin-left: auto;
 	margin-right: auto;
@@ -63,6 +63,8 @@ body {
 	margin: 5px;
 	background-color: transparent;
 	width: 150px;
+	border: none;
+	outline: none;
 }
 
 .modal-content {
@@ -79,12 +81,12 @@ body {
 }
 
 .modal-title {
-	font-family: "Righteous";
+	font-family: 'Righteous';
 	color: #ffcb08;
 	font-size: 20px;
 }
 .modal-body {
-	font-family: "Righteous";
+	font-family: 'Righteous';
 	color: #ffcb08;
 	font-size: 20px;
 }
